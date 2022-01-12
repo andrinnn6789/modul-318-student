@@ -7,10 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwissTransport", "src\Swiss
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwissTransportTest", "tests\SwissTransportTest\SwissTransportTest.csproj", "{959C6E54-5B1C-40F5-938A-C57B17451421}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3541134-B817-4771-825E-1EB03B004C35}"
-	ProjectSection(SolutionItems) = preProject
-		Class1.cs = Class1.cs
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTransportApp", "MyTransportApp1\MyTransportApp.csproj", "{8BF17456-1CFB-47DB-BC1D-6C7E695DD281}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +23,10 @@ Global
 		{959C6E54-5B1C-40F5-938A-C57B17451421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{959C6E54-5B1C-40F5-938A-C57B17451421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{959C6E54-5B1C-40F5-938A-C57B17451421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF17456-1CFB-47DB-BC1D-6C7E695DD281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF17456-1CFB-47DB-BC1D-6C7E695DD281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF17456-1CFB-47DB-BC1D-6C7E695DD281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF17456-1CFB-47DB-BC1D-6C7E695DD281}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

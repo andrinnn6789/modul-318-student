@@ -1,5 +1,6 @@
 ﻿namespace SwissTransport
 {
+    using System;
     using System.Threading.Tasks;
     using FluentAssertions;
     using SwissTransport.Core;
@@ -34,7 +35,7 @@
         [Fact]
         public async Task StationBoardAsync()
         {
-            StationBoardRoot stationBoard = await this.testee.GetStationBoardAsync("Sursee", "8502007");
+            StationBoardRoot stationBoard = await this.testee.GetStationBoardAsync("Sursee");
 
             stationBoard.Should().NotBeNull();
         }
@@ -42,7 +43,7 @@
         [Fact]
         public void StationBoard()
         {
-            StationBoardRoot stationBoard = this.testee.GetStationBoard("Sursee", "8502007");
+            StationBoardRoot stationBoard = this.testee.GetStationBoard("Sursee");
 
             stationBoard.Should().NotBeNull();
         }
@@ -59,6 +60,14 @@
         public void Connections()
         {
             Connections connections = this.testee.GetConnections("Sursee", "Luzern");
+
+            connections.Should().NotBeNull();
+        }
+
+        [Fact]
+        public void ConnectionsWithTime()
+        {
+            Connections connections = this.testee.GetConnections("Sursee", "Luzern",DateTime.Now);
 
             connections.Should().NotBeNull();
         }
